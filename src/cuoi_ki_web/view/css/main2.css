@@ -1,0 +1,577 @@
+
+html{
+    background: url("https://shopacclm247.vn/upload/images/5523c88dd347d1b7cc617f632b7efdb7.jpg") no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+/* css phan header */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    align-items: center;
+}
+
+.navbar-nav li a{
+    text-align: left;
+}
+.container-fluid{
+    display: flex;
+    width: 77%;
+}
+
+
+.navbar-brand img{
+
+ 
+    width: 155px;
+}
+
+.collapse ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.collapse ul li{
+    list-style: none;
+    margin-left: 10px;
+}
+
+.collapse ul li button{
+    color: orange;
+    border: none;
+    background-color: transparent;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.collapse ul li a{
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+    padding: 18px 20px;
+    font-size: 100%;
+}
+
+.collapse ul li:hover a, .collapse ul li:hover button{
+    color: gray;
+    transition: all 0.3s;
+}
+
+/* end header */
+
+/* phan popup dang nhap dang ki */
+
+/* form đăng nhập */
+.popup-login-signup{
+    background-color: rgba(0, 0, 0, 0.5); width: 100%;
+    height: 100vh; z-index: 100;
+    position: fixed;
+    font-family: "Raleway",sans-serif;
+    top: -150%;
+    transition: all 0.4s;
+    opacity: 1;
+}
+
+.popup-login-signup.active{
+   opacity: 1;
+   top: 0;
+}
+.popup-login-signup p{
+    font-size: 300%; right: 0; position: absolute; color: white; cursor: pointer; margin-right: 15px;
+    transition: all 0.5s;
+}
+
+.popup-login-signup p:hover{
+  color: black;
+}
+/* phan đăng nhập */
+
+.popup-login-signup .login{
+    border-radius: 10px;
+    padding: 20px 40px;
+    position: absolute;
+    background-color: white; width: 30%; height: 60%; left: 50%; top: 50%; transform: translate(-50%,-50%); 
+    opacity: 1;
+    top: 50%;
+}
+
+.login.active {
+    opacity: 0;
+    top: -100%;
+}
+
+
+.popup-login-signup .login button{
+    margin-top: 10px;
+    background-color: transparent;
+    color: black;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 100%;
+    border: 2px solid black;
+}
+
+.popup-login-signup .login input[type="text"],.popup-login-signup .login input[type="password"]
+{
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    left: 50%;
+    transform: translate(50% 50%);
+    border: 1px solid #aaa;
+    height: 5vh;
+    border-radius: 5px;
+
+}
+.popup-login-signup .login label{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.login h1, .signup h1{
+    margin-top: 20px;
+    font-weight: 550;
+    text-align: center;
+}
+
+/* form đăng kí */
+  
+.popup-login-signup .signup{
+    border-radius: 10px;
+    padding: 20px 40px;
+    position: absolute;
+    background-color: white; width: 30%; height: 70%; left: 50%; top: 50%; transform: translate(-50%,-50%); 
+    opacity: 0;
+    top: -100%;
+}
+
+
+.signup.active{
+    opacity: 1;
+    top: 50%
+}
+  .popup-login-signup .signup #bt_signup,  .popup-login-signup .signup button{
+      margin-top: 10px;
+      background-color: black;
+      color: white;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 100%;
+      display: block;
+  }
+  
+  .popup-login-signup .signup .items, .container-signup .pop-up .items button{
+
+          background-color: transparent;
+          border: none;
+          color: black;
+          text-align: left;
+          width: 50%;
+
+  }
+  .popup-login-signup .signup input[type="text"], .popup-login-signup .signup input[type="password"], .popup-login-signup .signup input[type="email"]
+  {
+      display: block;
+      margin-top: 5px;
+      width: 100%;
+      left: 50%;
+      transform: translate(50% 50%);
+      border: 1px solid #aaa;
+      height: 5vh;
+      border-radius: 5px;
+  
+  }
+  .popup-login-signup .signup label{
+      margin-top: 10px;
+      text-align: center;
+      font-size: 20px;
+  }
+/* end phan dang nhap dang ki */
+
+/* phần drop down đăng nhập */
+/* Style The Dropdown Button */
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+}
+
+.dropdown-content a, .dropdown-content button {   
+    display: flex;
+    height: 50px;
+    border: none;
+    width: 100%;
+}
+
+.dropdown-content a:hover, .dropdown-content button:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: rgba(255, 0, 0, 0.759);
+}
+/* end dropdown */
+/* phần ảnh tướng, trang phucj vaf linh thus */
+.wrapper_tuong,.wrapper_trang_phuc,.wrapper_linh_thu{
+    background-color: rgba(0, 0, 0, 0.5); width: 100%;
+    height: 100vh; z-index: 100;
+    position: fixed;
+    top: -150%;
+    transition: all 0.4s;
+}
+
+.wrapper_tuong.active,.wrapper_trang_phuc.active,.wrapper_linh_thu.active{
+    top: 0;
+}
+
+.wrapper_tuong .contain_tuong, .wrapper_trang_phuc .contain_trang_phuc, .wrapper_linh_thu .contain_linh_thu{
+    padding: 20px 40px;
+    position: absolute;
+    background-color: white; width: 80%; 
+    height: 80%; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%,-50%); 
+    opacity: 1;
+    top: 50%;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.wrapper_tuong #close_tuong, .wrapper_trang_phuc #close_trang_phuc, .wrapper_linh_thu #close_linh_thu{
+    right: 30px;
+    top: -10px;
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.wrapper_tuong #close_tuong:hover,.wrapper_trang_phuc #close_trang_phuc:hover,.wrapper_linh_thu #close_linh_thu:hover{
+    color: black;
+}
+/* end phần ảnh tướng */
+
+/* tài khoản đề xuất */
+.contain_tai_khoan_de_xuat{
+    margin-top: 50px;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.833);
+    left: 100%;
+}
+/* end tìa khoản đề xuất */
+/* css bộ lọc */
+
+.wrapper{
+    display: block;
+    background-color: #fff;
+    width: 75%;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.boloc{
+    display: block;
+    border: 2px solid orange;
+    width: 95%;
+}
+.wrapper .boloc h5{
+    padding-top: 10px;   
+    margin-bottom: 20px;
+}
+
+.wrapper .boloc .row .states, .wrapper .boloc .row input{
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+.wrapper .boloc .row input{
+    border: none;
+    width: 25%;
+    height: 5vh;
+    margin-top: 20px;
+}
+/* end bộ lọc */
+/* end pop up */
+/* phần thẻ sản phẩm */
+.card-product{
+    cursor: pointer;
+    border: 3px solid orange;
+    background-color: black;
+    transition: all 1s;
+}
+
+.card-product .card-body li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 17px;
+    color: white;
+}
+
+.card-product .card-body p{
+    color: orange;
+}
+
+.card-product .card-body a{
+    width: 100%;
+    margin-top: 30px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+}
+
+.card-product .card-body li span{
+    list-style: none;
+    text-align: left;
+    color: orange;
+}
+
+.card-product .contain_img
+{
+    width: 100%;
+    overflow: hidden;
+}
+.card-product .contain_img img{
+    transition: all 1s;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-product:hover .contain_img img{
+    
+    transform: scale(1.2);;
+}
+
+.card-product:hover{
+    box-shadow: 0 5px 5px 5px rgb(3, 4, 1);
+}
+
+.card-product .card-body li p{
+    text-decoration: line-through;
+}
+/* end thẻ sản phẩm */
+
+/* phần detail */
+.thongtintaikhoan .row .contain_thong_tin .contain_danhmuc_id{
+    background: url('https://hatieuphushop.com/bg-1.jpeg'); background-size: cover; position: absolute; width: 100%; left: 0;height: 7vh;
+}
+
+.thongtintaikhoan .row .contain_thong_tin .contain_gia_tien{
+    text-align: center; height: 7vh; position: absolute; background: url('https://hatieuphushop.com/bg-1.jpeg'); background-size: cover; color: white; width: 100%; left: 0; display: flex; justify-content: center; margin-top: 70px; font-size: 25px; font-weight: 600;
+}
+
+.thongtintaikhoan .row .contain_thong_tin > button:hover{
+   background-color: white;
+   
+}
+
+
+
+/* end detail */
+
+/* phan body */
+
+.gioithieu{
+    height: 300px;
+    margin-top: 80px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.gioithieu img{
+    border-radius: 10px;
+    width: 62%;
+    height: 100%;
+}
+
+.gioithieu .top_nap_the{
+    width: 36%;
+    border-radius: 10px;
+    height: 100%;
+    right: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+.top_nap_the{
+    border: 3px solid white;
+}
+.top_nap_the h2{
+    margin-top: 5px;
+    font-weight: 600;
+    border-bottom:3px solid white;
+    padding-bottom: 5px;
+}
+
+.top_nap_the table{
+    text-align: center;
+    width: 100%;
+    border-bottom: 3px solid white;
+}
+
+.top_nap_the table tr td{
+    padding:  0 20px;
+}
+
+.top_nap_the button{
+    margin-top: 4px;
+    text-align: center;
+    background-color: transparent;
+    color: orange;
+    font-weight: 600;
+    font-size: 23px;
+    border-radius: 5px;
+    width: 60%;
+    height: 12%;
+    border: 2px solid orange;
+    transition: all 0.5s;
+}
+
+.top_nap_the button:hover{
+    color: gray;
+}
+
+.thong_bao{
+    width: 75%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.784);
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.danh_muc1{
+    width: 75%;
+    background-color: black;
+    display: block;
+}
+
+.danh_muc1 h1{
+    font-weight: 600;
+    text-align: center;
+    color: rgb(248, 179, 52);
+    padding: 10px;
+}
+
+.danh_muc1 .container .card .card-body table{
+    text-align: CENTER;
+    font-weight: lighter;  
+}
+
+.danh_muc1 .container .card .card-body table th{
+    padding: 10px;
+}
+
+.danh_muc1 .container .row a{
+    text-decoration: none;
+    color: orange;
+}
+
+.col-lg-3 .card{
+    overflow: hidden;
+    transform: all 2s;
+}
+
+.danh_muc1 .container .row .card{
+    margin-top: 20px;
+}
+/* footer */
+footer{
+    background-color: rgb(1, 3, 24);
+    bottom: 0;
+    margin-top: 50px;
+}
+#footer1 {
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid white;
+}
+#footer1 img{
+    margin-top: 15px;
+    width: 40%;
+    margin-bottom: 10px;
+}
+#footer1 p{
+    color: white;
+    font-weight: 600;
+}
+#footer1{
+    display: block;
+
+}
+
+/* responsive */
+@media only screen and (max-width: 1100px) {
+        .container-fluid{
+            width: 95%;
+        }
+        .gioithieu{
+            display: block;
+            width: 95%;
+        }
+
+        .gioithieu img{
+            width: 100%;
+        }
+
+        .gioithieu .top_nap_the{
+            margin-top: 10px;
+            width: 100%;
+        }
+        .thong_bao{
+            margin-top: 350px;
+            width: 95%;
+        }
+        .danh_muc1{
+            width: 95%;
+        }
+        .popup-login-signup .login,.popup-login-signup .signup{
+            width: 50%;
+        }
+        .wrapper .boloc .row .states, .wrapper .boloc .row input{
+            margin-top: 20px;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .popup-login-signup .login,.popup-login-signup .signup{
+        width: 95%;
+    }
+    .thongtintaikhoan{
+        width: 95%;
+    }
+  }
+
+

@@ -11,9 +11,9 @@ services:
       - ./src/cuoi_ki_web:/var/www/html
     environment:
       # QUAN TRỌNG: Thay đổi địa chỉ DB thành Private IP của máy EC2-2
-      - DB_HOST=192.168.100.21  # <--- Điền Private IP của máy DB vào đây
-      - DB_USER=root
-      - DB_PASSWORD=phuoc@2209
+      - DB_HOST=database-mysql.ch2wsgi4quts.ap-southeast-1.rds.amazonaws.com # <--- Điền Private IP của máy DB vào đây
+      - DB_USER=phuoc
+      - DB_PASSWORD=phuoc2209
       - DB_NAME=shopaccgame
     networks:
       - app-network
